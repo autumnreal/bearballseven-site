@@ -1,0 +1,258 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts")).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+);
+---
+
+<BaseLayout title="肉丸七的日記">
+  <section class="intro">
+    <p class="eyebrow">Bearball Seven</p>
+    <h1>肉丸七的日記</h1>
+
+    <p class="lead">一些陪伴、一些觀察，也有一些安靜的片刻。</p>
+
+    <p>
+      這裡收錄肉丸七的日常記事。從情緒、散步、城市片刻，到那些不太張揚、
+      卻很真實的小小感受。
+    </p>
+
+    <p class="en-text">
+      A quiet place for observing, staying present, and sharing stories slowly.
+      Here, Bearball Seven spends time with people in their everyday life, and
+      also keeps company with every reader—helping them find their own rhythm in
+      the middle of busy and uncertain days. Bearball Studio is the little
+      universe of Bearball Seven.
+    </p>
+  </section>
+
+  <p class="ig-wrap">
+    <a
+      href="https://www.instagram.com/bearball.seven/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="ig-link"
+    >
+      Follow → @bearball.seven
+    </a>
+  </p>
+
+  <div class="divider"></div>
+
+  <section class="posts-section">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">最新文章</h2>
+        <p class="section-intro">慢慢讀，也慢慢留下自己的節奏。</p>
+      </div>
+
+      <p class="post-count">文章數量：{posts.length}</p>
+    </div>
+
+    <div class="post-list">
+      {
+        posts.map((post) => (
+          <article class="card">
+            {post.data.image && (
+              <div class="protected-image">
+                <img
+                  src={post.data.image}
+                  alt={post.data.title_zh ?? post.data.title ?? ""}
+                  draggable="false"
+                />
+                <div class="image-shield" aria-hidden="true" />
+              </div>
+            )}
+
+            <p class="meta">{post.data.date}</p>
+
+            <h3>
+              <a href={`/posts/${post.id}`}>
+                {post.data.title_zh ?? post.data.title}
+              </a>
+            </h3>
+
+            {post.data.title_en && <p class="title-en">{post.data.title_en}</p>}
+
+            <div class="summary">
+              <p class="summary-zh">
+                {post.data.description_zh ?? post.data.description}
+              </p>
+
+              {post.data.description_en && (
+                <p class="summary-en">{post.data.description_en}</p>
+              )}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="bottom-ig">
+      <a
+        href="https://www.instagram.com/bearball.seven/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ig-link"
+      >
+        更多內容 → @bearball.seven
+      </a>
+    </div>
+  </section>
+
+  <style>
+    .intro {
+      max-width: 700px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8a8a8a;
+    }
+
+    .intro h1 {
+      margin: 0 0 16px;
+      font-size: 3rem;
+      line-height: 1.12;
+      color: #13335f;
+    }
+
+    .lead {
+      margin: 0 0 18px;
+      font-size: 1.18rem;
+      line-height: 1.9;
+      color: #2f2f2f;
+    }
+
+    .intro p {
+      max-width: 640px;
+      font-size: 1.05rem;
+      line-height: 1.95;
+      color: #444;
+    }
+
+    .en-text {
+      margin-top: 18px;
+    }
+
+    .ig-wrap {
+      margin-top: 18px;
+    }
+
+    .ig-link {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: #13335f;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .ig-link:hover {
+      opacity: 0.92;
+      text-decoration: none;
+    }
+
+    .divider {
+      height: 1px;
+      background: #e6e6e6;
+      margin: 46px 0 34px;
+    }
+
+    .posts-section {
+      max-width: 100%;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      line-height: 1.2;
+      color: #13335f;
+    }
+
+    .section-intro {
+      margin: 0;
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .post-count {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #9a9a9a;
+      white-space: nowrap;
+    }
+
+    .post-list {
+      display: grid;
+      gap: 28px;
+    }
+
+    .meta {
+      margin-bottom: 10px;
+      font-size: 0.82rem;
+      letter-spacing: 0.03em;
+      color: #999;
+    }
+
+    h3 {
+      margin: 0 0 6px;
+      font-size: 1.55rem;
+      line-height: 1.3;
+    }
+
+    h3 a {
+      color: #13335f;
+      text-decoration: none;
+    }
+
+    h3 a:hover {
+      text-decoration: underline;
+    }
+
+    .title-en {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #7a7a7a;
+    }
+
+    .summary {
+      color: #666;
+    }
+
+    .summary-zh {
+      margin: 0;
+      color: #666;
+      line-height: 1.9;
+    }
+
+    .summary-en {
+      margin: 6px 0 0;
+      color: #8a8a8a;
+      line-height: 1.8;
+      font-size: 0.95em;
+    }
+
+    .bottom-ig {
+      margin-top: 40px;
+      text-align: left;
+    }
+  </style>
+</BaseLayout>

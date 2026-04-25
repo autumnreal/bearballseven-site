@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const notes = await getCollection('notes');
+---
+
+<BaseLayout title="Notes | Autumnreal">
+  <h1>Notes</h1>
+  <p>文章數量：{notes.length}</p>
+
+  {notes.map((note) => (
+    <article>
+      <h2>
+        <a href={`/notes/${note.id}`}>{note.data.title}</a>
+      </h2>
+      <p>{note.data.description}</p>
+    </article>
+  ))}
+</BaseLayout>
