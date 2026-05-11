@@ -92,7 +92,6 @@ const { title = "Bearball Seven" } = Astro.props;
         inset: 0;
       }
 
-      /* ⭐ Footer（已修正） */
       .site-footer {
         margin-top: 80px;
         padding: 40px 20px 50px;
@@ -140,7 +139,6 @@ const { title = "Bearball Seven" } = Astro.props;
         color: #aaa;
       }
 
-      /* ⭐ 手機版 */
       @media (max-width: 768px) {
         .nav-inner {
           padding: 16px 18px;
@@ -182,28 +180,30 @@ const { title = "Bearball Seven" } = Astro.props;
         <p class="footer-desc">有些故事，不急著說完。</p>
 
         <div class="footer-links">
-          <a
-            href="https://www.instagram.com/bearball.seven/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-          <a href="/about">About</a>
+          href="https://www.instagram.com/bearball.seven/" target="_blank"
+          rel="noopener noreferrer" > Instagram
         </div>
-
-        <p class="footer-copy">
-          © {new Date().getFullYear()} Bearball Seven
-        </p>
+        <a href="/about">About</a>
       </div>
-    </footer>
 
-    <script>
-      document.addEventListener("contextmenu", (event) => {
-        if (event.target.closest(".protected-image")) {
-          event.preventDefault();
-        }
-      });
-    </script>
+      <p class="footer-copy">
+        © {new Date().getFullYear()} Bearball Seven
+      </p>
+    </footer>
   </body>
+
+  <script>
+    document.addEventListener("contextmenu", (event) => {
+      if (event.target.closest(".protected-image")) {
+        event.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "d4559d78253945408ddf88693a3bccab"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </html>
