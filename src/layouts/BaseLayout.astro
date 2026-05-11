@@ -191,19 +191,19 @@ const { title = "Bearball Seven" } = Astro.props;
       </p>
     </footer>
   </body>
+
+  <script>
+    document.addEventListener("contextmenu", (event) => {
+      if (event.target.closest(".protected-image")) {
+        event.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "d4559d78253945408ddf88693a3bccab"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </html>
-
-<script>
-  document.addEventListener("contextmenu", (event) => {
-    if (event.target.closest(".protected-image")) {
-      event.preventDefault();
-    }
-  });
-</script>
-
-<!-- Cloudflare Web Analytics -->
-<script
-  defer
-  src="https://static.cloudflareinsights.com/beacon.min.js"
-  data-cf-beacon='{"token": "d4559d78253945408ddf88693a3bccab"}'></script>
-<!-- End Cloudflare Web Analytics -->
