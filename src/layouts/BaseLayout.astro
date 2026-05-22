@@ -1,5 +1,5 @@
 ---
-const { title = "Bearball Seven" } = Astro.props;
+const { title = "Bearball Seven", description = "" } = Astro.props;
 ---
 
 <html lang="zh-Hant">
@@ -7,6 +7,9 @@ const { title = "Bearball Seven" } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    {description && (
+      <meta name="description" content={description} />
+    )}
     <meta
       name="google-site-verification"
       content="at95iCuc-5lKFMtsaAiQlqcdp_PWibh25ohiXGfbmFo"
@@ -77,7 +80,7 @@ const { title = "Bearball Seven" } = Astro.props;
         height: 100%;
         object-fit: cover;
         pointer-events: none;
-        -webkit-user-drag: none; /* 防拖曳 */
+        -webkit-user-drag: none;
       }
       :global(.protected-image .image-shield) {
         position: absolute;
@@ -157,7 +160,7 @@ const { title = "Bearball Seven" } = Astro.props;
         <p class="footer-brand">Bearball Seven</p>
         <p class="footer-desc">有些故事，不急著說完。</p>
         <div class="footer-links">
-          <a
+          
             href="https://www.instagram.com/bearball.seven/"
             target="_blank"
             rel="noopener noreferrer">Instagram</a
@@ -169,14 +172,12 @@ const { title = "Bearball Seven" } = Astro.props;
     </footer>
 
     <script>
-      // 防右鍵儲存圖片（有連結的圖片除外）
       document.addEventListener("contextmenu", function (e) {
         if (e.target.tagName === "IMG" && !e.target.closest("a")) {
           e.preventDefault();
         }
       });
 
-      // 防拖曳圖片（有連結的圖片除外）
       document.addEventListener("dragstart", function (e) {
         if (e.target.tagName === "IMG" && !e.target.closest("a")) {
           e.preventDefault();
@@ -184,11 +185,9 @@ const { title = "Bearball Seven" } = Astro.props;
       });
     </script>
 
-    <!-- Cloudflare Web Analytics -->
     <script
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js"
       data-cf-beacon='{"token": "d4559d78253945408ddf88693a3bccab"}'></script>
-    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>

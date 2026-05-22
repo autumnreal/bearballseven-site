@@ -7,7 +7,10 @@ const posts = (await getCollection("posts")).sort(
 );
 ---
 
-<BaseLayout title="肉丸七的日記 | Bearball Seven's Journal ">
+<BaseLayout
+  title="肉丸七的日記 | Bearball Seven's Journal"
+  description="Read Bearball Seven's journal — small stories about daily life, quiet observations, and honest moments that don't ask for attention."
+>
   <section class="intro">
     <p class="eyebrow">Bearball Seven</p>
     <h1>肉丸七的日記</h1>
@@ -21,12 +24,12 @@ const posts = (await getCollection("posts")).sort(
 
     <p class="en-text">
       This is where I write about daily life — feelings, walks, small scenes in
-      the city, and those simple, honest moments that don’t ask for attention.
+      the city, and those simple, honest moments that don't ask for attention.
     </p>
   </section>
 
   <p class="ig-wrap">
-    <a
+    
       href="https://www.instagram.com/bearball.seven/"
       target="_blank"
       rel="noopener noreferrer"
@@ -88,7 +91,7 @@ const posts = (await getCollection("posts")).sort(
     </div>
 
     <div class="bottom-ig">
-      <a
+      
         href="https://www.instagram.com/bearball.seven/"
         target="_blank"
         rel="noopener noreferrer"

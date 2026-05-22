@@ -9,7 +9,10 @@ const posts = (await getCollection("posts"))
   .slice(0, 3);
 ---
 
-<BaseLayout title="肉丸七 | Bearball Seven">
+<BaseLayout
+  title="肉丸七 | Bearball Seven"
+  description="Bearball Seven is a quiet little bear who tells stories through observation and gentle companionship. Follow his journal and daily adventures."
+>
   <section class="hero">
     <p class="eyebrow">Bearball Seven</p>
     <h1>肉丸七</h1>
@@ -29,14 +32,14 @@ const posts = (await getCollection("posts"))
     </p>
 
     <p class="intro en-intro">
-      I’m Bearball Seven. A quiet little bear who stays close, watching and
+      I'm Bearball Seven. A quiet little bear who stays close, watching and
       keeping company as my human moves into the autumn of life. I turn everyday
       moments and feelings into small stories. This is my little universe.
     </p>
 
     <div class="hero-actions">
       <a href="/posts" class="primary-link">進入日記</a>
-      <a
+      
         href="https://www.instagram.com/bearball.seven/"
         target="_blank"
         rel="noopener noreferrer"
