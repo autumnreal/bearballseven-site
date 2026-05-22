@@ -15,6 +15,7 @@ const { title = "Bearball Seven", description = "" } = Astro.props;
       content="at95iCuc-5lKFMtsaAiQlqcdp_PWibh25ohiXGfbmFo"
     />
     <link rel="icon" href="/favicon.ico" />
+    <slot name="head" />
     <style>
       body {
         font-family:
@@ -160,15 +161,15 @@ const { title = "Bearball Seven", description = "" } = Astro.props;
         <p class="footer-brand">Bearball Seven</p>
         <p class="footer-desc">有些故事，不急著說完。</p>
         <div class="footer-links">
-        <a
-          href="https://www.instagram.com/bearball.seven/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-        <a href="/about">About</a>
-      </div>
+          
+            href="https://www.instagram.com/bearball.seven/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+          <a href="/about">About</a>
+        </div>
         <p class="footer-copy">© {new Date().getFullYear()} Bearball Seven</p>
       </div>
     </footer>
