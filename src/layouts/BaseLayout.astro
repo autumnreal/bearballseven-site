@@ -12,7 +12,7 @@ const { title = "Bearball Seven", description = "" } = Astro.props;
     )}
     <meta
       name="google-site-verification"
-      content="GZn16zKXQQzmdaeHtbE-ZKZ4geI5jbtO8vFgeCkFjMY"
+      content="at95iCuc-5lKFMtsaAiQlqcdp_PWibh25ohiXGfbmFo"
     />
     <link rel="icon" href="/favicon.ico" />
     <slot name="head" />
@@ -161,7 +161,7 @@ const { title = "Bearball Seven", description = "" } = Astro.props;
         <p class="footer-brand">Bearball Seven</p>
         <p class="footer-desc">有些故事，不急著說完。</p>
         <div class="footer-links">
-          <a
+          
             href="https://www.instagram.com/bearball.seven/"
             target="_blank"
             rel="noopener noreferrer"
@@ -176,18 +176,18 @@ const { title = "Bearball Seven", description = "" } = Astro.props;
 
     <script>
       document.addEventListener("contextmenu", function (e) {
-  const target = e.target as HTMLElement;
-  if (target?.tagName === "IMG" && !target?.closest("a")) {
-    e.preventDefault();
-  }
-});
+        const target = e.target as HTMLElement;
+        if (target?.tagName === "IMG" && !target?.closest("a")) {
+          e.preventDefault();
+        }
+      });
 
-document.addEventListener("dragstart", function (e) {
-  const target = e.target as HTMLElement;
-  if (target?.tagName === "IMG" && !target?.closest("a")) {
-    e.preventDefault();
-  }
-});
+      document.addEventListener("dragstart", function (e) {
+        const target = e.target as HTMLElement;
+        if (target?.tagName === "IMG" && !target?.closest("a")) {
+          e.preventDefault();
+        }
+      });
     </script>
 
     <script
