@@ -17,11 +17,11 @@ const { Content } = await render(post);
 const title = post.data.title_zh ?? post.data.title ?? "Bearball Seven";
 const description = post.data.description_zh ?? post.data.description ?? "";
 const image = post.data.og_image
-  ? `https://www.bearballseven.com${post.data.og_image}`
+  ? `https://bearballseven.com${post.data.og_image}`
   : post.data.image
-  ? `https://www.bearballseven.com${post.data.image}`
-  : "https://www.bearballseven.com/images/og-default.jpg";
-const url = `https://www.bearballseven.com/posts/${post.id}`;
+  ? `https://bearballseven.com${post.data.image}`
+  : "https://bearballseven.com/images/og-default.jpg";
+const url = `https://bearballseven.com/posts/${post.id}`;
 ---
 
 <BaseLayout title={title} description={description}>
