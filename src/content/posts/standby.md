@@ -5,6 +5,7 @@ description_zh: 在螢幕兩端，一種安靜的陪伴。
 description_en: A quiet kind of companionship between two sides of the screen.
 date: "2026-04-02"
 image: "/images/20260223_AuntieBeast1.jpg"
+og_image: "/images/20260520_Wander_001_og.jpg"
 ---
 
 今天，他在螢幕前坐了很久。

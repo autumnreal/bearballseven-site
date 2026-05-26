@@ -5,6 +5,7 @@ description_zh: 老歌很美但不適合加班時聽。
 description_en: Old songs are great…just not when I’m working late.
 date: "2026-04-14"
 image: "/images/seven_006.jpg"
+og_image: "/images/20260520_Wander_001_og.jpg"
 ---
 
 我叫肉丸七，是一隻住在電腦裡努力撐住精神的熊。
