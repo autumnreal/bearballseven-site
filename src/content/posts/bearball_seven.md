@@ -5,6 +5,7 @@ description_zh: 熊視角的創作陪伴日常。
 description_en: A bear’s daily life working behind a human’s dream.
 date: "2026-01-01"
 image: "/images/seven_003.jpg"
+og_image: "/images/seven_003_og.jpg"
 ---
 
 我叫肉丸七，是一隻住在電腦裡的熊。
