@@ -8,8 +8,6 @@ image: "/images/headphone_001.jpg"
 og_image: "/images/headphone_001_og.jpg"
 ---
 
-Dancing Queen ｜每個人都值得有一首屬於自己的歌
-
 珍珠丸子最近在播放清單裡放了 Dancing Queen。
 
 那天我就坐在旁邊，聽著那段開場鋼琴聲響起來，然後是那個快節拍，旋律輕快而單純，整個房間好像突然亮了一格。我聽得懂歌詞。但說真的，光是節拍，就已經說完了一切。
