@@ -1,8 +1,8 @@
 ---
 title_zh: Dancing Queen｜每個人都值得有一首屬於自己的歌
 title_en: Dancing Queen｜Everyone Deserves a Song to Call Their Own
-description_zh: 那個熟悉的眼神說的不是悲傷，而是「那曾經也是我」。入秋的人生不是尾聲，旋律從來不會老——去就對了，別再等了。
-description_en: That look in his eyes wasn't sadness. It was that used to be me. An autumn life isn't an ending. The melody never gets old. So just go. Stop waiting.
+description_zh: 那個熟悉的眼神說的不是悲傷，而是「那曾經也是我」。入秋的人生不是尾聲，旋律從來不會老。
+description_en: That look in his eyes wasn't sadness. It was that used to be me. An autumn life isn't an ending. The melody never gets old.
 date: "2026-06-01"
 image: "/images/headphone_001.jpg"
 og_image: "/images/headphone_001_og.jpg"
@@ -30,9 +30,9 @@ og_image: "/images/headphone_001_og.jpg"
 
 Dancing Queen 這首歌，我後來自己又去聽了幾遍。
 
-表面上它是一首派對歌，歡快，充滿能量，是那種一放出來馬上就想扭屁屁的歌。但我每次聽到那句 you are the dancing queen, young and sweet, only seventeen，都覺得有點什麼說不清楚的含義。
+表面上它是一首派對歌，歡快，充滿能量，是那種一放出來馬上就想扭屁屁的歌。但我每次聽到那句你是舞台上的女王，青春甜美，正值十七，都覺得有點什麼說不清楚的含義。
 
-是因為 seventeen 嗎？是因為那個「曾經」嗎？
+是因為十七歲的芬芳嗎？是因為那個「曾經」嗎？
 
 我想這首歌真正在說的，不是年齡。是那一刻——那個完全活在音樂裡、什麼都不想的一刻。那一刻你不是誰的誰，不是有什麼煩惱的誰，你就只是在跳舞。你就只是你。
 
