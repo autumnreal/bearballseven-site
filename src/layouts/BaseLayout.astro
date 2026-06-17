@@ -63,6 +63,7 @@ const { title = "Bearball Seven", description = "" } = Astro.props;
         padding: 40px;
         background: #f8f8f8;
         border-radius: 16px;
+        overflow: hidden;   /* 防止 margin collapse */
       }
       a {
         color: #13335f;
@@ -161,7 +162,7 @@ const { title = "Bearball Seven", description = "" } = Astro.props;
         <p class="footer-brand">Bearball Seven</p>
         <p class="footer-desc">有些故事，不急著說完。</p>
         <div class="footer-links">
-          <a
+          
             href="https://www.instagram.com/bearball.seven/"
             target="_blank"
             rel="noopener noreferrer"
