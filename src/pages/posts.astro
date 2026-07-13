@@ -206,6 +206,18 @@ const posts = (await getCollection("posts")).sort(
       gap: 28px;
     }
 
+    @media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+      :global(main) {
+        max-width: 1000px !important;
+        margin-inline: auto !important;
+      }
+
+      .post-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+    }
+
     .meta {
       margin-bottom: 10px;
       font-size: 0.82rem;
