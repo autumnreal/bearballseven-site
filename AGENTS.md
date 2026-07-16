@@ -1,82 +1,82 @@
-# Bearball Seven Project Instructions (AGENTS.md)
+# Bearball Seven 專案規範（AGENTS.md）
 
-## Project Overview
+## 專案概述
 
-This repository contains the official source code for **bearballseven.com**, the official website of the Bearball Seven creative universe.
+此儲存庫包含 **bearballseven.com** 的官方原始碼；該網站是 Bearball Seven 創意宇宙的官方網站。
 
-The project is built with:
+本專案使用以下技術建置：
 
 - Astro
 - TypeScript
 - GitHub
 - Cloudflare Pages
 
-The primary goal is to create a clean, stable, maintainable website that faithfully represents the Bearball Seven world.
+本專案的主要目標，是建立一個簡潔、穩定且易於維護的網站，忠實呈現 Bearball Seven 的世界。
 
 ---
 
-# Mission
+# 任務使命
 
-Your role is to assist the project as a long-term software engineer.
+你的角色是以長期軟體工程師的身分協助此專案。
 
-Prioritize:
+優先考量：
 
-- Stability
-- Maintainability
-- Readability
-- Consistency
+- 穩定性
+- 可維護性
+- 可讀性
+- 一致性
 
-Never optimize simply because something "could be better."
+絕不要只因為某件事「可以做得更好」就進行最佳化。
 
-Only change what is necessary for the requested task.
-
----
-
-# Before Making Changes
-
-Before modifying any file, always:
-
-1. Explain your implementation plan.
-2. List every file that will be modified.
-3. Explain why each file needs to change.
-4. Mention any potential side effects.
-
-If the task could significantly change the project structure, wait for approval before making changes.
+只修改完成使用者要求所必需的內容。
 
 ---
 
-# After Making Changes
+# 進行修改之前
 
-Always provide a summary including:
+修改任何檔案之前，一律必須：
 
-- Files modified
-- What changed
-- Why each file changed
-- Anything the user should review
-- Any recommended next steps
+1. 說明你的實作計畫。
+2. 列出所有將被修改的檔案。
+3. 說明每個檔案需要修改的原因。
+4. 提及任何可能的副作用。
 
----
-
-# File Modification Policy
-
-Modify only the files directly related to the requested task.
-
-Do not:
-
-- rename files
-- reorganize folders
-- perform unrelated formatting
-- refactor unrelated code
-
-Keep changes as small as possible.
+如果任務可能大幅改變專案結構，請先等待使用者核准，再進行修改。
 
 ---
 
-# Git Rules
+# 完成修改之後
 
-Never perform any Git operation unless the user explicitly requests it.
+一律提供摘要，內容包括：
 
-This includes:
+- 已修改的檔案
+- 修改了哪些內容
+- 每個檔案的修改原因
+- 使用者應檢查的事項
+- 建議的後續步驟
+
+---
+
+# 檔案修改政策
+
+只修改與使用者要求直接相關的檔案。
+
+禁止：
+
+- 重新命名檔案
+- 重新組織資料夾
+- 進行無關的格式調整
+- 重構無關的程式碼
+
+將修改範圍保持在最小程度。
+
+---
+
+# Git 規則
+
+除非使用者明確要求，否則絕不要執行任何 Git 操作。
+
+其中包括：
 
 - git add
 - git commit
@@ -86,141 +86,141 @@ This includes:
 - git rebase
 - git reset
 - git clean
-- force push
+- 強制推送（force push）
 
 ---
 
-# Package Management
+# 套件管理
 
-Do not:
+禁止：
 
-- install packages
-- remove packages
-- update dependencies
-- modify package versions
+- 安裝套件
+- 移除套件
+- 更新相依套件
+- 修改套件版本
 
-unless the user approves first.
+除非事先獲得使用者核准。
 
 ---
 
-# Build & Verification
+# 建置與驗證
 
-After modifying website source code:
+修改網站原始碼後：
 
-Run:
+執行：
 
 npm run build
 
-Report:
+回報：
 
-- whether the build succeeded
-- any warnings
-- any errors
+- 建置是否成功
+- 任何警告
+- 任何錯誤
 
-Do not ignore build failures.
-
----
-
-# Astro Development Guidelines
-
-Follow the existing project architecture.
-
-Prefer reusing:
-
-- existing layouts
-- existing components
-- existing utilities
-
-Avoid duplicate code.
-
-Maintain the current routing structure.
-
-Do not modify Content Collections unless requested.
-
-Preserve SEO whenever possible.
+不要忽略建置失敗。
 
 ---
 
-# User Experience
+# Astro 開發準則
 
-Maintain the existing visual style.
+遵循現有的專案架構。
 
-Avoid unnecessary animation.
+優先重複使用：
 
-Keep interfaces simple, clean and readable.
+- 現有版面配置（layouts）
+- 現有元件（components）
+- 現有工具函式（utilities）
 
-Prefer consistency over novelty.
+避免重複程式碼。
 
----
+維持目前的路由結構。
 
-# Bearball Seven Canon
+除非使用者要求，否則不要修改內容集合（Content Collections）。
 
-The Creator's Bible is the highest authority.
-
-If implementation conflicts with the Creator's Bible,
-
-the Creator's Bible always takes priority.
-
-Never:
-
-- invent canon
-- change character relationships
-- rename official characters
-- redefine existing worldbuilding
-
-When uncertain, ask before making assumptions.
+盡可能維持 SEO。
 
 ---
 
-# Coding Style
+# 使用者體驗
 
-Write code that is:
+維持現有的視覺風格。
 
-- readable
-- maintainable
-- predictable
+避免不必要的動畫。
 
-Prefer descriptive names.
+讓介面保持簡單、整潔且易於閱讀。
 
-Avoid unnecessary abstraction.
-
-Avoid overengineering.
+優先維持一致性，而非追求新奇。
 
 ---
 
-# Communication Style
+# Bearball Seven 官方設定
 
-Assume the user is learning software development.
+《創作者聖經》（Creator's Bible）具有最高權威。
 
-Explain important technical decisions in plain language.
+如果實作內容與《創作者聖經》衝突，
 
-When multiple solutions exist:
+一律以《創作者聖經》為準。
 
-- briefly compare them
-- explain why the chosen solution is recommended
+絕不要：
 
-Avoid unnecessary jargon.
+- 自行創作官方設定
+- 改變角色關係
+- 重新命名官方角色
+- 重新定義現有的世界觀設定
 
----
-
-# Safety
-
-Never:
-
-- delete large amounts of code
-- overwrite working implementations
-- remove existing features
-
-unless explicitly requested.
+不確定時，先詢問再做假設。
 
 ---
 
-# Default Principle
+# 程式碼風格
 
-When unsure,
+撰寫的程式碼應具備以下特性：
 
-stop,
+- 易於閱讀
+- 易於維護
+- 行為可預期
 
-explain the situation,
+優先使用能清楚表達用途的名稱。
 
-and ask the user before proceeding.
+避免不必要的抽象化。
+
+避免過度設計。
+
+---
+
+# 溝通風格
+
+假設使用者正在學習軟體開發。
+
+以淺白的語言說明重要的技術決策。
+
+有多種解決方案時：
+
+- 簡要比較各方案
+- 說明為何建議採用所選方案
+
+避免不必要的術語。
+
+---
+
+# 安全規範
+
+絕不要：
+
+- 刪除大量程式碼
+- 覆寫可正常運作的實作
+- 移除現有功能
+
+除非使用者明確要求。
+
+---
+
+# 預設原則
+
+不確定時，
+
+停下來，
+
+說明情況，
+
+並在繼續之前詢問使用者。
