@@ -6,6 +6,7 @@ description_en: Breath, be brave
 date: "2026-04-07"
 image: "/images/Breeze2.jpg"
 og_image: "/images/20260520_Wander_001_og.jpg"
+draft: true
 ---
 
 我的人類，正在經歷一段很不容易的時候。
