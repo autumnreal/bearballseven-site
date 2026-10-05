@@ -1,10 +1,10 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-const posts = defineCollection({
+const journal = defineCollection({
   loader: glob({
     pattern: '**/*.md',
-    base: './src/content/posts',
+    base: './src/content/journal',
   }),
   schema: z.object({
     // 新結構(未來用)
@@ -27,5 +27,5 @@ const posts = defineCollection({
 });
 
 export const collections = {
-  posts,
+  journal,
 };

@@ -43,20 +43,21 @@ Bearballseven-site/
 ├── node_modules/                 # Installed npm dependencies
 ├── public/
 │   ├── images/                   # Journal and character images
+│   ├── _redirects                # Old /posts URLs → /journal
 │   ├── favicon.ico
 │   ├── favicon.svg
 │   └── robots.txt
 ├── src/
 │   ├── content/
-│   │   └── posts/                # Markdown journal entries
+│   │   └── journal/              # Markdown journal entries
 │   ├── layouts/
 │   │   └── BaseLayout.astro      # Shared layout, navigation, and footer
 │   ├── pages/
-│   │   ├── posts/
+│   │   ├── journal/
 │   │   │   └── [slug].astro      # Individual journal routes
 │   │   ├── about.astro           # About page
 │   │   ├── index.astro           # Home page
-│   │   └── posts.astro           # Journal index
+│   │   └── journal.astro         # Journal index
 │   └── content.config.ts         # Journal collection schema
 ├── .gitignore
 ├── AGENTS.md                     # AI collaboration and project rules

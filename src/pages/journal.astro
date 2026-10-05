@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("posts", ({ data }) => !data.draft)).sort(
+const posts = (await getCollection("journal", ({ data }) => !data.draft)).sort(
   (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
 );
 ---
@@ -44,11 +44,11 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft)).sort(
   <section class="posts-section">
     <div class="section-head">
       <div>
-        <h2 class="section-title">最新文章</h2>
+        <h2 class="section-title">最新日記</h2>
         <p class="section-intro">慢慢讀，也慢慢留下自己的節奏。</p>
       </div>
 
-      <p class="post-count">文章數量：{posts.length}</p>
+      <p class="post-count">日記數量：{posts.length}</p>
     </div>
 
     <div class="post-list">
@@ -69,7 +69,7 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft)).sort(
             <p class="meta">{post.data.date}</p>
 
             <h3>
-              <a href={`/posts/${post.id}`}>
+              <a href={`/journal/${post.id}`}>
                 {post.data.title_zh ?? post.data.title}
               </a>
             </h3>

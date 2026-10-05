@@ -1,0 +1,3 @@
+# 舊的 /posts 網址自動轉到 /journal（讓 IG 和以前分享的連結不會壞掉）
+/posts    /journal    301
+/posts/*  /journal/:splat    301
