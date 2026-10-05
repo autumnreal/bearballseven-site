@@ -20,6 +20,9 @@ const posts = defineCollection({
     date: z.string(),
     image: z.string().optional(),
     og_image: z.string().optional(),
+
+    // true = 暫時不公開
+    draft: z.boolean().optional(),
   }),
 });
 
