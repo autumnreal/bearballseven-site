@@ -1,6 +1,6 @@
 ---
-title_zh: （草稿）人類觀察筆記：那張椅子
-title_en: (Draft) Notes on My Human: The Chair
+title_zh: "（草稿）人類觀察筆記：那張椅子"
+title_en: "(Draft) Notes on My Human: The Chair"
 date: "2026-10-05"
 draft: true
 ---
