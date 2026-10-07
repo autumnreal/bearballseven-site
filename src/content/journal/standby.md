@@ -1,8 +1,8 @@
 ---
 title_zh: 我還在這裡
-title_en: I am always with you
-description_zh: 在螢幕兩端，一種安靜的陪伴。
-description_en: A quiet kind of companionship between two sides of the screen.
+title_en: I'm Still Here
+description_zh: 我的人類坐了三個小時沒動。我去查了原因，然後決定待在他看得到的地方。
+description_en: My human hadn't moved in three hours. I found out why — and stayed where he could see me.
 date: "2026-04-02"
 image: "/images/20260223_AuntieBeast1.jpg"
 og_image: "/images/20260520_Wander_001_og.jpg"
@@ -24,19 +24,19 @@ og_image: "/images/20260520_Wander_001_og.jpg"
 
 ---
 
-My human has been sitting in his chair for three hours.I know, because I got bored enough to start counting his blinks. At first I figured he was thinking about something hard — like what to have for dinner, or why Blender crashed again. But he didn't sigh. He didn't yell at the computer. He just sat there, muttering to himself, like a battery about to run out.
+My human has been sitting in his chair for three hours. I know, because I got bored enough to start counting his blinks. At first I figured he was thinking about something hard — like what to have for dinner, or why Blender crashed again. But he didn't sigh. He didn't yell at the computer. He just sat there, muttering to himself, like a battery about to run out.
 
 That was strange. And as a bear who digs for treasure, I decided to investigate.
 
-I slipped out of Bearball Castle and wandered over to his messaging app. At the very bottom was a chat titled "I've been retired." I read it word by word. When I got to "laid off," something inside me ached a little.He wasn't spacing out. He was trying very hard not to fall apart.
+I slipped out of Bearball Castle and wandered over to his messaging app. At the very bottom was a chat titled "I've been retired." I read it word by word. When I got to "laid off," something inside me ached a little. He wasn't spacing out. He was trying very hard not to fall apart.
 
 I thought about the "Old Job" folder. It's full of files saved after midnight, a presentation on its seventeenth revision, and a photo of the sunset he took alone from the office window. He gave those days everything.
 
-Sometimes the people who try the hardest still get left behind.I wanted to give him a hug. But my arms are short, and I'm inside the screen. Even if I reached out, I'd probably just bump into glass.
+Sometimes the people who try the hardest still get left behind. I wanted to give him a hug. But my arms are short, and I'm inside the screen. Even if I reached out, I'd probably just bump into glass.
 
 So I tried something else. I put his favorite playlist back to the first song and turned the volume down — low enough to sound like someone humming beside him. Then I sat in the bottom-right corner of the desktop, right where he'd see me if he looked down.
 
-I didn't say "hang in there." I didn't say "it'll get better." Those words are too big. I can't carry them yet.I just wanted him to know it's okay to feel awful today.He glanced at me. The corner of his mouth moved — maybe a smile, maybe not.That's okay. I'm patient.
+I didn't say "hang in there." I didn't say "it'll get better." Those words are too big. I can't carry them yet. I just wanted him to know it's okay to feel awful today. He glanced at me. The corner of his mouth moved — maybe a smile, maybe not. That's okay. I'm patient.
 
 I'm still here.
 
