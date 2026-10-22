@@ -1,5 +1,8 @@
 ---
 const { title = "Bearball Seven", description = "" } = Astro.props;
+// 正本網址：告訴 Google 這一頁的正本是 bearballseven.com（不是 www 或 pages.dev）
+const path = Astro.url.pathname.endsWith("/") ? Astro.url.pathname : Astro.url.pathname + "/";
+const canonicalURL = new URL(path, Astro.site);
 ---
 
 <html lang="zh-Hant">
@@ -14,6 +17,7 @@ const { title = "Bearball Seven", description = "" } = Astro.props;
       name="google-site-verification"
       content="at95iCuc-5lKFMtsaAiQlqcdp_PWibh25ohiXGfbmFo"
     />
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" href="/favicon.ico" />
     <slot name="head" />
     <style>
